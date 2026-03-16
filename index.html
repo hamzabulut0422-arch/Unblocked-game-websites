@@ -15,6 +15,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
         }
 
         h1 {
@@ -23,6 +24,7 @@
             margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 2px;
+            text-align: center;
         }
 
         p.subtitle {
@@ -43,7 +45,7 @@
 
         /* Cartes de jeux */
         .game-card {
-            background: #1a1a1a; /* Gris très foncé pour les cartes */
+            background: #1a1a1a; 
             border: 1px solid #333;
             border-radius: 15px;
             overflow: hidden;
@@ -61,15 +63,23 @@
             box-shadow: 0 10px 25px rgba(255,255,255,0.1);
         }
 
-        /* Image fictive (en attendant que tu mettes les tiennes) */
+        /* Images des jeux */
         .game-thumb {
             width: 100%;
             height: 160px;
             background: #333;
+            object-fit: cover; /* Pour que l'image remplisse bien le cadre */
+        }
+
+        /* Fallback pour les emojis si pas d'image */
+        .game-emoji {
+            width: 100%;
+            height: 160px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 3rem;
+            background: #222;
         }
 
         .game-title {
@@ -103,50 +113,19 @@
 <body>
 
     <h1>Slyzz's Unblocked Games</h1>
-    <p class="subtitle">Play games🚀</p>
+    <p class="subtitle">Play games 🚀</p>
 
     <div class="games-grid">
         
         <a href="https://yell0wsuit.page/assets/games/subway-surfers-unity/miami.html" target="_blank" class="game-card">
-            <div class="game-thumb">🏄‍♂️</div>
+            <div class="game-emoji">🏄‍♂️</div>
             <div class="game-title">Subway Surfers: Miami</div>
         </a>
 
         <a href="https://yell0wsuit.page/assets/games/subway-surfers-unity/beijing.html#google_vignette" target="_blank" class="game-card">
-            <div class="game-thumb">🐉</div>
+            <div class="game-emoji">🐉</div>
             <div class="game-title">Subway Surfers: Beijing</div>
         </a>
 
         <a href="https://yell0wsuit.page/assets/games/subway-surfers-unity/iceland.html#google_vignette" target="_blank" class="game-card">
-            <div class="game-thumb">❄️</div>
-            <div class="game-title">Subway Surfers: Iceland</div>
-        </a>
-
-        <a href="https://web.cloudmoonapp.com/fr/" target="_blank" class="game-card">
-            <div class="game-thumb">📱</div>
-            <div class="game-title">Roblox, Clash Royale & More</div>
-        </a>
-
-        <a href="https://yandex.com/games/" target="_blank" class="game-card">
-            <div class="game-thumb">🎮</div>
-            <div class="game-title">FNAF & Other Games</div>
-        </a>
-
-        <a href="https://nexuss.zapto.org/" target="_blank" class="game-card">
-            <div class="game-thumb">🛡️</div>
-            <div class="game-title">Best Proxy</div>
-        </a>
-
-        <a href="https://eaglercraft.com/" target="_blank" class="game-card">
-            <div class="game-thumb">⛏️</div>
-            <div class="game-title">Eaglercraft (Minecraft)</div>
-        </a>
-
-    </div>
-
-    <footer>
-        <p>TikTok: <a href="https://www.tiktok.com/@xsyx111" target="_blank">@xsyx111</a> | DM me if you have any problems or game websites to add</p>
-    </footer>
-
-</body>
-</html>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFn0lEQVR4nO3dy27bRhSA4XvI0tqN67px06LpLpD3vUDf90V6g75vYV9A37fIsm7apE3jxG68S6MpkqPZ6AByZAn5P0AQYmZInMPhzBnODAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4H+uLidwaHl6fX59L8v7fPr6/DqfT98f/+7T89eP7/P19Prp9frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp77fD6X9eP959f6/Pr99frT+vE5n8/6/Pj9/PH1X8/rvp
