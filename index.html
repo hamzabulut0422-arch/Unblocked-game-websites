@@ -2,39 +2,151 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>unblocked game websites</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slyzz's Unblocked Game Websites</title>
+    <style>
+        /* Style Global */
+        body {
+            background-color: #000000; /* Fond noir */
+            color: #ffffff;           /* Texte blanc */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p.subtitle {
+            color: #bbbbbb;
+            margin-bottom: 40px;
+            font-size: 1.2rem;
+        }
+
+        /* Grille de jeux */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 1200px;
+            padding-bottom: 50px;
+        }
+
+        /* Cartes de jeux */
+        .game-card {
+            background: #1a1a1a; /* Gris très foncé pour les cartes */
+            border: 1px solid #333;
+            border-radius: 15px;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            border-color: #ffffff;
+            box-shadow: 0 10px 25px rgba(255,255,255,0.1);
+        }
+
+        /* Image fictive (en attendant que tu mettes les tiennes) */
+        .game-thumb {
+            width: 100%;
+            height: 160px;
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .game-title {
+            padding: 15px;
+            font-weight: bold;
+            text-align: center;
+            background: #222;
+        }
+
+        /* Pied de page (Footer) */
+        footer {
+            margin-top: auto;
+            padding: 30px;
+            border-top: 1px solid #333;
+            width: 100%;
+            text-align: center;
+            color: #888;
+        }
+
+        footer a {
+            color: #ff0050; /* Couleur TikTok */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenue sur mon site qui sert a jouer a des jeux</h1>
-    <p>play games🚀</p>
 
-    <a href="https://yell0wsuit.page/assets/games/subway-surfers-unity/miami.html" target="_blank">
-<button>Jouer sur la map miami</button>
-</a>
-<a href="https://yell0wsuit.page/assets/games/subway-surfers-unity/beijing.html#google_vignette" target="_blank">
-<button>Jouer sur la map beijing</button>
-</a>
-<a href="https://yell0wsuit.page/assets/games/subway-surfers-unity/iceland.html#google_vignette" target="_blank">
-<button>Jouer sur la map iceland</button>
-</a>
-<a href="https://web.cloudmoonapp.com/fr/" target="_blank">
-<button>Jouer a clash royale ou roblox ou brawl stars etc..</button>
-</a>
-<a href="https://yandex.com/games/" target="_blank">
-<button>Jouer a fnaf ou plein d'autre jeux</button>
-</a>
-<a href="https://nexuss.zapto.org/" target="_blank">
-<button>best proxy </button>
-</a>
-<a href="https://eaglercraft.com/" target="_blank">
-<button>eaglecraft </button>
-</a>
+    <h1>Slyzz's Unblocked Games</h1>
+    <p class="subtitle">Play games🚀</p>
 
+    <div class="games-grid">
+        
+        <a href="https://yell0wsuit.page/assets/games/subway-surfers-unity/miami.html" target="_blank" class="game-card">
+            <div class="game-thumb">🏄‍♂️</div>
+            <div class="game-title">Subway Surfers: Miami</div>
+        </a>
 
+        <a href="https://yell0wsuit.page/assets/games/subway-surfers-unity/beijing.html#google_vignette" target="_blank" class="game-card">
+            <div class="game-thumb">🐉</div>
+            <div class="game-title">Subway Surfers: Beijing</div>
+        </a>
 
+        <a href="https://yell0wsuit.page/assets/games/subway-surfers-unity/iceland.html#google_vignette" target="_blank" class="game-card">
+            <div class="game-thumb">❄️</div>
+            <div class="game-title">Subway Surfers: Iceland</div>
+        </a>
 
+        <a href="https://web.cloudmoonapp.com/fr/" target="_blank" class="game-card">
+            <div class="game-thumb">📱</div>
+            <div class="game-title">Roblox, Clash Royale & More</div>
+        </a>
 
+        <a href="https://yandex.com/games/" target="_blank" class="game-card">
+            <div class="game-thumb">🎮</div>
+            <div class="game-title">FNAF & Other Games</div>
+        </a>
+
+        <a href="https://nexuss.zapto.org/" target="_blank" class="game-card">
+            <div class="game-thumb">🛡️</div>
+            <div class="game-title">Best Proxy</div>
+        </a>
+
+        <a href="https://eaglercraft.com/" target="_blank" class="game-card">
+            <div class="game-thumb">⛏️</div>
+            <div class="game-title">Eaglercraft (Minecraft)</div>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>TikTok: <a href="https://www.tiktok.com/@xsyx111" target="_blank">@xsyx111</a> | DM me if you have any problems or game websites to add</p>
+    </footer>
 
 </body>
 </html>
-
